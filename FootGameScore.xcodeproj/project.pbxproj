@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DD5D1CE92F3C96A700C207E3 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = DD5D1CE82F3C96A700C207E3 /* FirebaseAnalyticsCore */; };
+		DD5D1CEB2F3C96A700C207E3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DD5D1CEA2F3C96A700C207E3 /* FirebaseAuth */; };
+		DD5D1CED2F3C96A700C207E3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DD5D1CEC2F3C96A700C207E3 /* FirebaseFirestore */; };
+		DD5D1CEF2F3C96A700C207E3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DD5D1CEE2F3C96A700C207E3 /* FirebaseMessaging */; };
+		DD5D1CF22F3C970800C207E3 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = DD5D1CF12F3C970800C207E3 /* AppsFlyerLib-Static */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DD5D1CD92F3C964000C207E3 /* FootGameScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootGameScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5D1CEF2F3C96A700C207E3 /* FirebaseMessaging in Frameworks */,
+				DD5D1CF22F3C970800C207E3 /* AppsFlyerLib-Static in Frameworks */,
+				DD5D1CE92F3C96A700C207E3 /* FirebaseAnalyticsCore in Frameworks */,
+				DD5D1CEB2F3C96A700C207E3 /* FirebaseAuth in Frameworks */,
+				DD5D1CED2F3C96A700C207E3 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = FootGameScore;
 			packageProductDependencies = (
+				DD5D1CE82F3C96A700C207E3 /* FirebaseAnalyticsCore */,
+				DD5D1CEA2F3C96A700C207E3 /* FirebaseAuth */,
+				DD5D1CEC2F3C96A700C207E3 /* FirebaseFirestore */,
+				DD5D1CEE2F3C96A700C207E3 /* FirebaseMessaging */,
+				DD5D1CF12F3C970800C207E3 /* AppsFlyerLib-Static */,
 			);
 			productName = FootGameScore;
 			productReference = DD5D1CD92F3C964000C207E3 /* FootGameScore.app */;
@@ -94,6 +112,10 @@
 			);
 			mainGroup = DD5D1CD02F3C963F00C207E3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD5D1CE72F3C96A700C207E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DD5D1CF02F3C970800C207E3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DD5D1CDA2F3C964000C207E3 /* Products */;
 			projectDirPath = "";
@@ -256,11 +278,13 @@
 				DEVELOPMENT_TEAM = 7SJ46G89S2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use data to display personalized content tailored to your preferences and interests, improving your overall experience within the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,12 +293,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosharny.FootGameScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,11 +316,13 @@
 				DEVELOPMENT_TEAM = 7SJ46G89S2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use data to display personalized content tailored to your preferences and interests, improving your overall experience within the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +331,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosharny.FootGameScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +366,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD5D1CE72F3C96A700C207E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+		DD5D1CF02F3C970800C207E3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD5D1CE82F3C96A700C207E3 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD5D1CE72F3C96A700C207E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		DD5D1CEA2F3C96A700C207E3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD5D1CE72F3C96A700C207E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DD5D1CEC2F3C96A700C207E3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD5D1CE72F3C96A700C207E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DD5D1CEE2F3C96A700C207E3 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD5D1CE72F3C96A700C207E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		DD5D1CF12F3C970800C207E3 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD5D1CF02F3C970800C207E3 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD5D1CD12F3C963F00C207E3 /* Project object */;
 }
