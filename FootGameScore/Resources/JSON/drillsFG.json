@@ -1,0 +1,512 @@
+[
+    {
+        "id": "841A55D5-5EFD-428D-9B12-A8340F5FB248",
+        "title": "Precision Shooting Under Pressure",
+        "difficulty": "Hard",
+        "duration": "25 min",
+        "category": "Finishing",
+        "description": "This drill is designed to simulate high-pressure match situations where time and space are limited. You will work on receiving the ball in tight areas, quickly shifting your body weight, and executing a precise finish into the corner of the goal. The focus is on accuracy over power, and composure amidst chaos.",
+        "tacticsNote": "Focus on the 'blind side' of the imaginary defender. Receive the ball on your back foot to open up the shooting angle immediately.",
+        "mentalNote": "Visualize the net. Don't look at the goalkeeper. Trust your muscle memory to find the corner.",
+        "steps": [
+            {
+                "id": "9639BA5A-2E30-4882-A415-4179408734FE",
+                "title": "Set Up The Area",
+                "description": "Place 4 cones in a square shape (5x5 meters) just outside the penalty box. Place a mannequin or a tall cone in the center to act as a defender. Have a supply of balls ready 10 meters away.",
+                "imageName": "drill_setup_cones"
+            },
+            {
+                "id": "F84DB12D-B9F0-4719-B227-B9FA850B7807",
+                "title": "The Approach",
+                "description": "Start at the far cone. Sprint to the center cone (defender), check your run by dropping your shoulder, and explode away to the side cone to receive a pass.",
+                "imageName": "drill_step_sprint"
+            },
+            {
+                "id": "7193615D-20FE-470E-B410-C0A57597601B",
+                "title": "The First Touch",
+                "description": "Receive the pass (from a partner or wall rebound). Your first touch must take the ball away from the central cone and set up a shot. Do not stop the ball dead.",
+                "imageName": "drill_step_touch"
+            },
+            {
+                "id": "10CA41EE-9F9E-4267-8FD2-F67F475592B5",
+                "title": "The Fake",
+                "description": "Before shooting, drop your shoulder or move your hips to feint a shot to the far post. This is to balance the goalkeeper.",
+                "imageName": "drill_step_fake"
+            },
+            {
+                "id": "69592CAB-AABD-4DDC-949E-478AF20711B5",
+                "title": "The Finish",
+                "description": "Strike the ball with the inside of your foot, aiming for the bottom corners. Keep your head over the ball to keep it low.",
+                "imageName": "drill_step_shoot"
+            },
+            {
+                "id": "DEAB89D7-ACEB-492C-A115-8673B248D84B",
+                "title": "Reset and Repeat",
+                "description": "Jog back to the start. Performance 10 reps on the left side, 10 reps on the right side. Maintain intensity throughout.",
+                "imageName": "drill_step_reset"
+            }
+        ],
+        "imageName": "sim_shooting_drill",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "716D114A-D8AF-48C1-B88C-64C048D73254",
+        "title": "The 1v1 Dribble Master",
+        "difficulty": "Medium",
+        "duration": "20 min",
+        "category": "Dribbling",
+        "description": "Mastering the art of the 1v1 duel. This drill improves your ability to unbalance a defender, change pace rapidly, and accelerate into open space. Essential for wingers and strikers alike.",
+        "tacticsNote": "Attack the defender's front foot. If they step in, push the ball past that foot. They cannot turn quickly enough to catch you.",
+        "mentalNote": "Be arrogant. Believe that no defender can stop you. If you lose the ball, win it back immediately.",
+        "steps": [
+            {
+                "id": "03094382-D0EA-42AD-9D22-201232DA9E06",
+                "title": "Gauntlet Setup",
+                "description": "Set up a channel 10 meters wide and 20 meters long. Place 3 cones in a zig-zag pattern down the center to represent defenders.",
+                "imageName": "drill_setup_zigzag"
+            },
+            {
+                "id": "0B914073-9B76-4959-B663-7409BC0E9A06",
+                "title": "Standard Dribble",
+                "description": "Dribble at the first cone with speed. Keep the ball close with small touches using the outside of your boot (pinky toe).",
+                "imageName": "drill_step_dribble"
+            },
+            {
+                "id": "80D19A8A-1E6E-4D8A-8F70-3EAA1D790D96",
+                "title": "The Move",
+                "description": "Perform a skill move (Stepover, Body Feint, or La Croqueta) at the cone. Execute the move about 1 meter away from the cone/defender.",
+                "imageName": "drill_step_skill"
+            },
+            {
+                "id": "EF7F7687-29B2-4233-B2E8-0A62A5AECB26",
+                "title": "Explosion",
+                "description": "After the move, push the ball forward aggressively and sprint 5 meters to the next cone. This change of pace is what beats players.",
+                "imageName": "drill_step_explode"
+            },
+            {
+                "id": "BD144A35-A0E2-47A7-88C8-7CAE494699DF",
+                "title": "Reaction",
+                "description": "At the final cone, perform a sharp cut inside and take a shot at a mini-goal or target.",
+                "imageName": "drill_step_cut_shoot"
+            },
+            {
+                "id": "39D1FF26-ADE1-4D6B-819A-8F244DDB5A8A",
+                "title": "Measurement",
+                "description": "Time yourself. Try to complete the course faster each time while maintaining ball control. 5 sets of 3 runs.",
+                "imageName": "drill_step_timer"
+            }
+        ],
+        "imageName": "dribbling_cones_green",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "ED3D0937-6FDB-4D3F-B213-C8BF8C46F0CF",
+        "title": "Aerial Dominance: Power Headers",
+        "difficulty": "Hard",
+        "duration": "15 min",
+        "category": "Aerial",
+        "description": "Develop the explosive power and timing required to win aerial duels and score with your head. Focuses on vertical leap, neck strength, and heading technique.",
+        "tacticsNote": "Create separation before the jump. A small shove or a step back gives you the room to attack the ball.",
+        "mentalNote": "Aggression. You must want the ball more than your opponent. Attack it at its highest point.",
+        "steps": [
+            {
+                "id": "15D9747C-0CF0-4FA5-ADEF-0A9FA8DD3580",
+                "title": "Suspended Ball Setup",
+                "description": "Ideally, use a ball suspended on a rope. If not, have a partner serve throw-ins. Place a marker for your starting jump position.",
+                "imageName": "drill_setup_aerial"
+            },
+            {
+                "id": "D76F4CF0-7628-45FB-828A-2E9781E86866",
+                "title": "The Approach",
+                "description": "Take two steps and perform a double-footed jump. Use your arms to swing upwards, generating maximum lift.",
+                "imageName": "drill_step_jump"
+            },
+            {
+                "id": "184E52B0-EC09-4C34-B249-FBFA70C5A996",
+                "title": "Timing the Header",
+                "description": "Meet the ball at the peak of your jump. Keep your eyes open. Do not close them!",
+                "imageName": "drill_step_header_contact"
+            },
+            {
+                "id": "53EDCC0A-E33C-4948-9A21-3D3DA255CEEA",
+                "title": "Technique",
+                "description": "Use your forehead. Snap your neck forward to generate power. Aim to head the ball DOWN towards the ground.",
+                "imageName": "drill_step_technique"
+            },
+            {
+                "id": "44F7418E-DACE-44D5-9719-0C7166713BA7",
+                "title": "Directional Heading",
+                "description": "Progress to heading the ball into corners of the goal. Twist your upper body in the air to direct the ball.",
+                "imageName": "drill_step_direction"
+            },
+            {
+                "id": "58068EBC-3FCD-4CB6-9605-2B7EADABA328",
+                "title": "Volume",
+                "description": "Perform 20 jumps/headers. Rest for 2 minutes. Repeat for 3 sets. Focus on quality of jump.",
+                "imageName": "drill_step_reps"
+            }
+        ],
+        "imageName": "header_training_jump",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "6969C66E-9549-42D3-AFE5-576DFDB07FB5",
+        "title": "First Touch Control Box",
+        "difficulty": "Easy",
+        "duration": "15 min",
+        "category": "Control",
+        "description": "A fundamental drill to improve your first touch from the air and ground. The goal is to kill the ball dead or guide it perfectly within a small designated area.",
+        "tacticsNote": "Scan the area before the ball arrives. Know your next move before you touch the ball.",
+        "mentalNote": "Soft feet. Relax your body. Tension leads to heavy touches.",
+        "steps": [
+            {
+                "id": "56127E23-F2F7-4EE3-9D8D-DD986B85AC3D",
+                "title": "The Box",
+                "description": "Mark a 2x2 meter box with cones. Stand inside it. Have a partner throw or pass balls to you from various distances.",
+                "imageName": "drill_setup_box"
+            },
+            {
+                "id": "9BCCDE39-F26C-4C52-991C-59BF912338B4",
+                "title": "Ground Control",
+                "description": "Partner passes firm ground passes. Control the ball with the inside of the foot so it stays within the box.",
+                "imageName": "drill_step_ground_ctrl"
+            },
+            {
+                "id": "91AF8B6F-813D-43AA-962C-3391F1462933",
+                "title": "Aerial Control - Chest",
+                "description": "Partner throws the ball to chest height. Cushion the ball with your chest, arching your back, dropping it to your feet inside the box.",
+                "imageName": "drill_step_chest"
+            },
+            {
+                "id": "D2A2E643-CF0A-4187-A239-47087B30545B",
+                "title": "Aerial Control - Thigh",
+                "description": "Partner throws to thigh height. Use the fleshy part of the thigh to cushion the ball up slightly, then settle it.",
+                "imageName": "drill_step_thigh"
+            },
+            {
+                "id": "6DB1902A-5DBA-4008-B561-215F87D790BF",
+                "title": "Aerial Control - Foot",
+                "description": "Partner throws high ball. Use the laces (to kill it) or inside of foot (to guide it) to bring the ball down instantly.",
+                "imageName": "drill_step_aerial_foot"
+            },
+            {
+                "id": "C9656DCD-8974-4DE4-B18C-46BF7E8C714B",
+                "title": "Turn and Pass",
+                "description": "Add a turn. Control the ball, turn 180 degrees outside the box, and pass to a target. 10 reps each variation.",
+                "imageName": "drill_step_turn_pass"
+            }
+        ],
+        "imageName": "ball_control_feet",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "0386DD7B-407A-49AD-BEBE-353D1A5E9FED",
+        "title": "Explosive Sprint Intervals",
+        "difficulty": "Hard",
+        "duration": "30 min",
+        "category": "Fitness",
+        "description": "High-intensity interval training (HIIT) specific to football movements. Builds anaerobic capacity, recovery speed, and leg power.",
+        "tacticsNote": "Maintain form even when tired. Don't let your head drop. This simulates the last 10 minutes of a match.",
+        "mentalNote": "Push through the burn. The pain is temporary, the fitness is permanent. Champion mindset.",
+        "steps": [
+            {
+                "id": "3C9DC669-3075-4E20-92D1-98586248C329",
+                "title": "Warm Up",
+                "description": "5 minutes light jogging, dynamic stretching (leg swings, lunges, high knees) to prepare the muscles.",
+                "imageName": "drill_setup_warmup"
+            },
+            {
+                "id": "A57EBF82-BEF9-4E3C-89EC-DCCCE8356AC6",
+                "title": "Shuttle Runs",
+                "description": "Place cones at 0, 5, 10, 15, and 20 meters. Sprint to 5 and back, 10 and back, etc. continuous.",
+                "imageName": "drill_step_shuttles"
+            },
+            {
+                "id": "047FD3FF-17C4-49FC-A80D-1CE74C05D829",
+                "title": "Rest Period",
+                "description": "Rest for 30 seconds exactly. Walk, breathe deeply. Do not sit down.",
+                "imageName": "drill_step_rest"
+            },
+            {
+                "id": "E43853EE-E0FF-4035-A77E-B7718DF2E5C0",
+                "title": "Zig-Zag Sprints",
+                "description": "Set up cones in a zig-zag over 30 meters. Sprint through them, focusing on sharp turns and planting the foot firmly.",
+                "imageName": "drill_step_zigzag_sprint"
+            },
+            {
+                "id": "20A3888C-6D2B-4EA9-A26F-A924EDA29B8F",
+                "title": "Backwards/Forwards",
+                "description": "Sprint forward 10m, backpedal 5m, sprint forward 10m. This mimics tracking back and then counter-attacking.",
+                "imageName": "drill_step_back_fwd"
+            },
+            {
+                "id": "AC55A518-063A-479E-8A37-16AE0CB20214",
+                "title": "Cool Down",
+                "description": "5 minutes light jog and static stretching. Focus on hamstrings and calves. Hydrate immediately.",
+                "imageName": "drill_step_cooldown"
+            }
+        ],
+        "imageName": "fitness_running_track",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "989DCEC8-0964-4087-BD69-1990FC12B454",
+        "title": "Weak Foot Wonder",
+        "difficulty": "Medium",
+        "duration": "20 min",
+        "category": "Technique",
+        "description": "A focused session to improve the competency and confidence of your weaker foot. A two-footed striker is twice as dangerous.",
+        "tacticsNote": "Force yourself to use the weak foot even when it feels unnatural. The brain needs to build new neural pathways.",
+        "mentalNote": "Don't be embarrassed by mistakes. embrace the awkwardness. It is the only way to improve.",
+        "steps": [
+            {
+                "id": "2D889A64-51E0-432A-8B13-12BF65AA53D5",
+                "title": "Wall Passing",
+                "description": "Stand 2 meters from a wall. Pass the ball repeatedly against the wall using ONLY your weak foot. 50 reps.",
+                "imageName": "drill_setup_wall"
+            },
+            {
+                "id": "79EB8C08-0AD8-4E9A-A66F-456964168994",
+                "title": "One Touch Pass",
+                "description": "Move closer (1m). Play one-touch passes against the wall. Focus on locking the ankle.",
+                "imageName": "drill_step_onetouch"
+            },
+            {
+                "id": "11D69B4B-2A5F-4CAD-850E-75A2F3A6924B",
+                "title": "Dribbling Weave",
+                "description": "Set up a line of 6 cones. Dribble through using ONLY the weak foot. Use inside and outside of the foot.",
+                "imageName": "drill_step_weak_dribble"
+            },
+            {
+                "id": "CED8E144-76DC-4551-9370-54D0B2814C4B",
+                "title": "Shooting Static",
+                "description": "Place ball on penalty spot. Take shots with weak foot. Focus on clean contact, not power. Aim for corners.",
+                "imageName": "drill_step_weak_shot"
+            },
+            {
+                "id": "FDDF01C0-9AB0-4838-A8D6-8CC167D0D8C4",
+                "title": "Shooting Moving",
+                "description": "Roll the ball forward, run onto it, and shoot with the weak foot. Timing is harder here.",
+                "imageName": "drill_step_weak_move_shot"
+            },
+            {
+                "id": "535F697E-6A43-40BA-9627-FE2D209F523F",
+                "title": "Juggling",
+                "description": "Attempt to juggle the ball using only your weak foot. Start with drop-kick-catch if needed. try for 10 in a row.",
+                "imageName": "drill_step_weak_juggle"
+            }
+        ],
+        "imageName": "training_boots_grass",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "F19E1ACB-EE72-47D7-9A00-71F99AA2BC49",
+        "title": "Volley Vampire",
+        "difficulty": "Expert",
+        "duration": "20 min",
+        "category": "Finishing",
+        "description": "Advanced finishing drill focusing on striking the ball while it is in the air. Requires exceptional timing, balance, and coordination.",
+        "tacticsNote": "Keep your eye on the ball all the way to the foot. Lean over the ball to keep the volley down.",
+        "mentalNote": "Total commitment. If you hesitate, you miss. Strike through the ball.",
+        "steps": [
+            {
+                "id": "24131ED2-C812-444F-A824-94D9973F28E2",
+                "title": "Self-Serve",
+                "description": "Stand at edge of box. Throw ball up, let it bounce once, and strike it on the half-volley into goal.",
+                "imageName": "drill_setup_self"
+            },
+            {
+                "id": "20138B84-C5E3-4EF9-BA5D-6D56971FE589",
+                "title": "Side Volley",
+                "description": "Partner throws ball from the side (simulating a cross). Strike it first time without a bounce. Rotate hips.",
+                "imageName": "drill_step_side_volley"
+            },
+            {
+                "id": "D9987A93-98E2-4A44-AC07-346383C0C3DD",
+                "title": "High Ball Control & Volley",
+                "description": "Partner throws high ball. Chest control, then volley before it hits ground.",
+                "imageName": "drill_step_chest_volley"
+            },
+            {
+                "id": "1E117297-ACD0-4939-9D9F-39F1AC2EE927",
+                "title": "Turning Volley",
+                "description": "Back to goal. Throw ball up, turn 180 while ball is in air, locate and strike on the volley.",
+                "imageName": "drill_step_turn_volley"
+            },
+            {
+                "id": "653A03B8-7AB3-47D6-A3BE-E9375DD74497",
+                "title": "Scissor Kick (Advanced)",
+                "description": "Partner throws ball to side. Jump and perform scissor motion to strike ball in mid-air.",
+                "imageName": "drill_step_scissor"
+            },
+            {
+                "id": "E4E265B8-0F04-4920-BDBF-15A6CC90C2CF",
+                "title": "Reaction Volley",
+                "description": "Rebounder usage. Kick into rebounder, react to high bounce, volley home.",
+                "imageName": "drill_step_rebounder"
+            }
+        ],
+        "imageName": "volley_shot_action",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "8C020D00-D102-43C3-89F4-7CC37F7C7EC3",
+        "title": "Tactical Awareness: Scan & Plan",
+        "difficulty": "Medium",
+        "duration": "25 min",
+        "category": "Tactics",
+        "description": "A cognitive drill aimed at improving your frequency of 'scanning' (checking over shoulder) and decision-making speed.",
+        "tacticsNote": "Scan BEFORE you receive the ball. Take a mental picture of the field.",
+        "mentalNote": "Stay alert. A lazy mind leads to slow feet.",
+        "steps": [
+            {
+                "id": "0B1641F1-1970-49A2-8497-193481762E56",
+                "title": "Color Calls",
+                "description": "Set up 4 colored cones behind you. Partner passes to you. Before receiving, check shoulder and partner holds up a colored card/cone.",
+                "imageName": "drill_setup_colors"
+            },
+            {
+                "id": "FEC6639C-7B24-4B2E-9377-EE011C8B86A8",
+                "title": "Call and Move",
+                "description": "You must shout the color partner is holding BEFORE controlling the ball. Then control and pass back.",
+                "imageName": "drill_step_call"
+            },
+            {
+                "id": "D6FE8F19-DE0C-404B-BF87-7B010478074A",
+                "title": "Directional Control",
+                "description": "If partner holds Red (Left), control to left. Blue (Right), control to right. Adds decision making to scanning.",
+                "imageName": "drill_step_direction_scan"
+            },
+            {
+                "id": "5D419D7C-C17D-438F-8E01-022BBA978663",
+                "title": "Blind Side Turn",
+                "description": "Receive ball, scan to see 'defender' (cone) position behind. Turn away from where cone is placed.",
+                "imageName": "drill_step_turn_scan"
+            },
+            {
+                "id": "26F59107-BCE1-4063-83D1-1AC3B8D8D8E7",
+                "title": "Pass Selection",
+                "description": "Two small goals behind you. Partner calls 'Left' or 'Right' as ball travels. Scan, turn, pass to correct goal.",
+                "imageName": "drill_step_pass_scan"
+            },
+            {
+                "id": "E23D6BA9-DDFE-4593-BCF2-AAEA7F92EBF3",
+                "title": "Pressure Scan",
+                "description": "Add a passive defender. As pass comes, scan to see if defender is pressing tight (one-touch pass back) or standing off (turn and play).",
+                "imageName": "drill_step_pressure"
+            }
+        ],
+        "imageName": "tactics_clipboard_plan",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "B4FC979A-8E53-4C8D-A7F0-28FAE54D9FEA",
+        "title": "Passing Patterns & Combinations",
+        "difficulty": "Medium",
+        "duration": "20 min",
+        "category": "Passing",
+        "description": "Drill focusing on quick, intricate passing combinations (1-2s, wall passes, third man runs) essential for breaking down compact defenses.",
+        "tacticsNote": "Pass and Move. Never stand still after releasing the ball. Drag defenders out of position.",
+        "mentalNote": "Communication. Visual or verbal cues keep the rhythm flowing.",
+        "steps": [
+            {
+                "id": "D0613C33-CD80-4B32-9F77-F945689B87BF",
+                "title": "Triangle Setup",
+                "description": "Set up 3 cones in a triangle, 10 meters apart. 3 players (or 1 player + 2 walls/rebounders).",
+                "imageName": "drill_setup_triangle"
+            },
+            {
+                "id": "C1E92CA1-2F12-42E3-9775-BA6E9809137A",
+                "title": "Pass and Follow",
+                "description": "Pass to player B, run to player B's position. B passes to C, runs to C. Constant rotation.",
+                "imageName": "drill_step_pass_follow"
+            },
+            {
+                "id": "A12C5F63-D78B-47BD-817D-EB92B7BA2CEF",
+                "title": "The Wall Pass (1-2)",
+                "description": "Play into center, center player sets it back one-touch into your running path. Sprint onto it.",
+                "imageName": "drill_step_wall_pass"
+            },
+            {
+                "id": "10A1F935-9DE6-40A7-8146-24F17B4B2E70",
+                "title": "Third Man Run",
+                "description": "Player A passes to B. B sets to C. C plays through ball for A who has made a run behind B.",
+                "imageName": "drill_step_third_man"
+            },
+            {
+                "id": "49B2E737-2436-4366-AEB7-039D23B55D9A",
+                "title": "One Touch Rondo",
+                "description": "Keep the ball moving one touch around the triangle. If you take two touches, start over. Speed is key.",
+                "imageName": "drill_step_rondo"
+            },
+            {
+                "id": "E678660A-27E7-4C9F-A0DE-6C04DC3F9CF8",
+                "title": "Long-Short",
+                "description": "One long pass (20m), followed by a short set (5m), then another long pass. Varies range of passing.",
+                "imageName": "drill_step_long_short"
+            }
+        ],
+        "imageName": "passing_triangle_drill",
+        "isCompleted": false,
+        "isFavorite": false
+    },
+    {
+        "id": "91583F3D-F5FD-4B7D-BA5F-04C4CF2820FE",
+        "title": "Strength & Shielding",
+        "difficulty": "Hard",
+        "duration": "20 min",
+        "category": "Physical",
+        "description": "For targets men and hold-up players. Learn to use your body to protect the ball from aggressive defenders.",
+        "tacticsNote": "Get your body BETWEEN the ball and the defender. Use your arm (low) to feel where the defender is.",
+        "mentalNote": "Be immovable. planted stance. Own your space.",
+        "steps": [
+            {
+                "id": "05A2DDE2-6979-4612-B3B1-DE88E360D4C5",
+                "title": "Shielding Box",
+                "description": "5x5m box. Player vs Partner. Player has ball. Partner tries to touch the ball. Shield for 30 seconds.",
+                "imageName": "drill_setup_shield"
+            },
+            {
+                "id": "0DF02314-6687-4F39-A69A-FF52B701FB52",
+                "title": "Low Center of Gravity",
+                "description": "Bend knees, stick bum out. This makes you wider and harder to push off the ball.",
+                "imageName": "drill_step_posture"
+            },
+            {
+                "id": "BDABC56F-CB4C-4368-B2BA-41FC0197D2D8",
+                "title": "Turning the Defender",
+                "description": "Feel the pressure. If defender pushes left, roll the defender to the right using their momentum.",
+                "imageName": "drill_step_roll_turn"
+            },
+            {
+                "id": "D18DBA3B-85CC-4BCE-95E5-A43B46336911",
+                "title": "Back to Goal Receive",
+                "description": "Partner throws ball. Control with chest or thigh while leaning back into partner (defender).",
+                "imageName": "drill_step_back_goal"
+            },
+            {
+                "id": "58E8873F-DA71-4BCC-B985-6231955C63EC",
+                "title": "Hold and Release",
+                "description": "Shield for 5 seconds, then explode away from defender into space.",
+                "imageName": "drill_step_hold_release"
+            },
+            {
+                "id": "54252579-DE8B-4423-923C-4241DB4E9688",
+                "title": "Core Engage",
+                "description": "Static holds. Partner pushes you while you stand on one leg. Engage core stabilizers.",
+                "imageName": "drill_step_core"
+            }
+        ],
+        "imageName": "gym_weights_strength",
+        "isCompleted": false,
+        "isFavorite": false
+    }
+]
