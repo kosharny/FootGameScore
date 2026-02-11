@@ -40,6 +40,10 @@ struct AboutViewFG: View {
                     Color.fgBlack.opacity(0.95)
                         .ignoresSafeArea(edges: .top)
                 )
+                Image("mainLogo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
                 
                 Text("FootGame Score")
                     .font(.largeTitle)

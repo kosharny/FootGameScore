@@ -1,4 +1,5 @@
 import SwiftUI
+import StoreKit
 
 struct SettingsViewFG: View {
     @EnvironmentObject var viewModel: ViewModelFG
@@ -144,6 +145,7 @@ struct ThemeButtonFG: View {
     let theme: ThemeModelFG
     let isSelected: Bool
     let action: () -> Void
+    @EnvironmentObject var storeManager: StoreManagerFG
     
     var body: some View {
         Button(action: action) {
@@ -166,7 +168,7 @@ struct ThemeButtonFG: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                    } else if theme.isPremium && !StoreManagerFG.shared.purchasedProductIDs.contains(theme.productID ?? "") {
+                    } else if theme.isPremium && !storeManager.purchasedProductIDs.contains(theme.productID ?? "") {
                         Image(systemName: "lock.fill")
                             .foregroundColor(.white)
                             .font(.title2)
@@ -179,6 +181,21 @@ struct ThemeButtonFG: View {
                     .fontWeight(.bold)
                     .foregroundColor(isSelected ? .white : .gray)
                     .padding(.top, 5)
+                
+                // Price or Free Label
+                Group {
+                    if !theme.isPremium {
+                        Text("Free")
+                    } else if let productID = theme.productID,
+                              let product = storeManager.products.first(where: { $0.id == productID }),
+                              !storeManager.purchasedProductIDs.contains(productID) {
+                        Text(product.displayPrice)
+                    } else if theme.isPremium && storeManager.purchasedProductIDs.contains(theme.productID ?? "") {
+                        Text("Purchased")
+                    }
+                }
+                .font(.system(size: 10, weight: .black))
+                .foregroundColor(.fgNeon)
             }
         }
     }

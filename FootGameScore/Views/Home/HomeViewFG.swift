@@ -13,22 +13,6 @@ struct HomeViewFG: View {
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 15) {
                         
-                        if let drill = viewModel.drills.first {
-                            SectionHeaderFG(title: "Featured Drill")
-                                .padding(.horizontal)
-                            NavigationLink(destination: TasksViewFG(drill: drill)) {
-                                DrillCardFG(drill: drill)
-                                    .padding(.horizontal)
-                            }
-                        } else {
-                            // Fallback UI or empty check
-                            Text("Loading Drills...")
-                                .foregroundColor(.gray)
-                                .onAppear {
-                                    print("Drills count: \(viewModel.drills.count)")
-                                }
-                        }
-                        
                         // Daily Tip
                         ZStack(alignment: .leading) {
                             Image(OnboardingImageFG.tipBgImg)
@@ -72,6 +56,24 @@ struct HomeViewFG: View {
                             .padding(20)
                         }
                         .padding(.horizontal)
+                        
+                        if let drill = viewModel.drills.first {
+                            SectionHeaderFG(title: "Featured Drill")
+                                .padding(.horizontal)
+                            NavigationLink(destination: TasksViewFG(drill: drill)) {
+                                DrillCardFG(drill: drill)
+                                    .padding(.horizontal)
+                            }
+                        } else {
+                            // Fallback UI or empty check
+                            Text("Loading Drills...")
+                                .foregroundColor(.gray)
+                                .onAppear {
+                                    print("Drills count: \(viewModel.drills.count)")
+                                }
+                        }
+                        
+                        
                         
                         // 1. Training Program Card (Before Latest Intel)
                         SectionHeaderFG(title: "Special Programs")
