@@ -81,6 +81,7 @@ struct DrillOverviewFG: View {
                     Image(drill.imageName.isEmpty ? "placeholder" : drill.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+                        .frame(maxWidth: .infinity)
                         .frame(height: 300)
                         .clipped()
                         .overlay(Color.black.opacity(0.3))
@@ -191,11 +192,11 @@ struct DrillStepViewFG: View {
                     GlassCardFG {
                         Image(step.imageName.isEmpty ? "placeholder" : step.imageName)
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 250)
                             .cornerRadius(15)
-                            .frame(maxHeight: 250)
-                            .shadow(radius: 5)
-                            .padding(5)
+                            .clipped()
                     }
                     .padding(.horizontal)
                     

@@ -17,6 +17,7 @@ struct DetailsViewFG: View {
                         Image(article.imageName.isEmpty ? "placeholder" : article.imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
+                            .frame(maxWidth: .infinity)
                             .frame(height: 300)
                             .clipped()
                             .overlay(Color.black.opacity(0.3))

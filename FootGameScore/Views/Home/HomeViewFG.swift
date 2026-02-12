@@ -18,6 +18,7 @@ struct HomeViewFG: View {
                             Image(OnboardingImageFG.tipBgImg)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: .infinity)
                                 .frame(height: 140)
                                 .cornerRadius(20)
                                 .clipped()
@@ -57,6 +58,20 @@ struct HomeViewFG: View {
                         }
                         .padding(.horizontal)
                         
+                        // Rules Quiz Card (In front of Featured Drill)
+                        SectionHeaderFG(title: "Football Rules")
+                            .padding(.horizontal)
+                        NavigationLink(destination: RulesQuizViewFG()) {
+                            InteractiveCardFG(
+                                title: "Football Rules",
+                                subtitle: "KNOWLEDGE TEST",
+                                icon: "pencil.and.outline",
+                                gradient: LinearGradient(colors: [Color.fgNeon, Color.fgBlack.opacity(0.8)], startPoint: .topLeading, endPoint: .bottomTrailing),
+                                result: viewModel.userStats.rulesQuizScore.map { "Last Score: \($0)/7" }
+                            )
+                            .padding(.horizontal)
+                        }
+                        
                         if let drill = viewModel.drills.first {
                             SectionHeaderFG(title: "Featured Drill")
                                 .padding(.horizontal)
@@ -64,77 +79,84 @@ struct HomeViewFG: View {
                                 DrillCardFG(drill: drill)
                                     .padding(.horizontal)
                             }
-                        } else {
-                            // Fallback UI or empty check
-                            Text("Loading Drills...")
-                                .foregroundColor(.gray)
-                                .onAppear {
-                                    print("Drills count: \(viewModel.drills.count)")
-                                }
                         }
-                        
-                        
-                        
-                        // 1. Training Program Card (Before Latest Intel)
-                        SectionHeaderFG(title: "Special Programs")
-                            .padding(.horizontal)
-                        NavigationLink(destination: TrainingProgramViewFG()) {
-                            GlassCardFG {
-                                HStack {
-                                    VStack(alignment: .leading, spacing: 5) {
-                                        Text("STRIKER TRAINING")
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                        Text("Elite drills for forwards")
-                                            .font(.caption)
-                                            .foregroundColor(.gray)
-                                    }
-                                    Spacer()
-                                    Image(systemName: "target")
-                                        .font(.title)
-                                        .foregroundColor(.fgRed)
-                                }
-                            }
-                            .padding(.horizontal)
-                        }
-                        
-                        // Recent Articles (Latest Intel)
-                        if !viewModel.articles.isEmpty {
-                            SectionHeaderFG(title: "Latest Intel")
-                                .padding(.horizontal)
-                            ForEach(viewModel.articles.prefix(3)) { article in
-                                NavigationLink(destination: DetailsViewFG(article: article)) {
-                                    ArticleCardFG(article: article)
-                                        .padding(.horizontal)
-                                }
-                            }
-                        }
-                        
-                        // 2. Nutrition Card (Below Latest Intel)
-                        SectionHeaderFG(title: "Peak Performance")
-                            .padding(.horizontal)
-                        NavigationLink(destination: NutritionViewFG()) {
-                            GlassCardFG {
-                                HStack {
-                                    VStack(alignment: .leading, spacing: 5) {
-                                        Text("PRO NUTRITION")
-                                            .font(.headline)
-                                            .foregroundColor(.white)
-                                        Text("Fuel your body correctly")
-                                            .font(.caption)
-                                            .foregroundColor(.gray)
-                                    }
-                                    Spacer()
-                                    Image(systemName: "leaf.fill")
-                                        .font(.title)
-                                        .foregroundColor(.fgGreen)
-                                }
-                            }
-                            .padding(.horizontal)
-                        }
-                        
-                        Spacer(minLength: 80) // Space for TabBar
                     }
+                    
+                    // Striker Test Card (Below Featured Drill)
+                    SectionHeaderFG(title: "Player Profile")
+                        .padding(.horizontal)
+                    NavigationLink(destination: StrikerTestViewFG()) {
+                        InteractiveCardFG(
+                            title: "Player Profile",
+                            subtitle: "STRIKER TYPE",
+                            icon: "figure.soccer",
+                            gradient: LinearGradient(colors: [Color.fgRed, Color.fgBlack.opacity(0.8)], startPoint: .topLeading, endPoint: .bottomTrailing),
+                            result: viewModel.userStats.strikerTypeResult.map { "Role: \($0)" }
+                        )
+                        .padding(.horizontal)
+                    }
+                    
+                    
+                    
+                    // 1. Training Program Card (Before Latest Intel)
+                    SectionHeaderFG(title: "Special Programs")
+                        .padding(.horizontal)
+                    NavigationLink(destination: TrainingProgramViewFG()) {
+                        GlassCardFG {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 5) {
+                                    Text("STRIKER TRAINING")
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                    Text("Elite drills for forwards")
+                                        .font(.caption)
+                                        .foregroundColor(.gray)
+                                }
+                                Spacer()
+                                Image(systemName: "target")
+                                    .font(.title)
+                                    .foregroundColor(.fgRed)
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+                    
+                    // Recent Articles (Latest Intel)
+                    if !viewModel.articles.isEmpty {
+                        SectionHeaderFG(title: "Latest Intel")
+                            .padding(.horizontal)
+                        ForEach(viewModel.articles.prefix(3)) { article in
+                            NavigationLink(destination: DetailsViewFG(article: article)) {
+                                ArticleCardFG(article: article)
+                                    .padding(.horizontal)
+                            }
+                        }
+                    }
+                    
+                    // 2. Nutrition Card (Below Latest Intel)
+                    SectionHeaderFG(title: "Peak Performance")
+                        .padding(.horizontal)
+                    NavigationLink(destination: NutritionViewFG()) {
+                        GlassCardFG {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 5) {
+                                    Text("PRO NUTRITION")
+                                        .font(.headline)
+                                        .foregroundColor(.white)
+                                    Text("Fuel your body correctly")
+                                        .font(.caption)
+                                        .foregroundColor(.gray)
+                                }
+                                Spacer()
+                                Image(systemName: "leaf.fill")
+                                    .font(.title)
+                                    .foregroundColor(.fgGreen)
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+                    
+                    Spacer(minLength: 80) // Space for TabBar
                 }
             }
         }

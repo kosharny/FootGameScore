@@ -231,6 +231,16 @@ class ViewModelFG: ObservableObject {
         }
     }
     
+    func finishRulesQuiz(score: Int) {
+        userStats.rulesQuizScore = score
+        savePersistence()
+    }
+    
+    func finishStrikerTest(result: String) {
+        userStats.strikerTypeResult = result
+        savePersistence()
+    }
+    
     private func updateStreak() {
         // Simple streak logic: check if last activity was yesterday
         let calendar = Calendar.current

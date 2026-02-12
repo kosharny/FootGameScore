@@ -40,7 +40,8 @@ struct OnboardingViewFG: View {
                                 
                                 Image(pages[index].image)
                                     .resizable()
-                                    .scaledToFill()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(maxWidth: .infinity)
                                     .frame(height: 300)
                                     .cornerRadius(30)
                                     .clipped()

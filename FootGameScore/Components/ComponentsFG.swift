@@ -123,6 +123,84 @@ struct GlassCardFG<Content: View>: View {
     }
 }
 
+// MARK: - Interactive Card (For Tests/Quizzes)
+struct InteractiveCardFG: View {
+    let title: String
+    let subtitle: String
+    let icon: String
+    let gradient: LinearGradient
+    let result: String?
+    
+    @ObservedObject private var themeManager = ThemeManagerFG.shared
+    
+    var body: some View {
+        ZStack(alignment: .trailing) {
+            // Background Gradient
+            RoundedRectangle(cornerRadius: 24)
+                .fill(gradient)
+                .frame(height: 120)
+            
+            // Decorative Icon (Large, background)
+            Image(systemName: icon)
+                .font(.system(size: 80))
+                .foregroundColor(.white.opacity(0.15))
+                .offset(x: 20, y: 10)
+                .clipped()
+            
+            HStack {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(title.uppercased())
+                        .font(.system(size: 14, weight: .black))
+                        .foregroundColor(.white.opacity(0.8))
+                    
+                    Text(subtitle)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    
+                    if let result = result {
+                        HStack(spacing: 6) {
+                            Image(systemName: "checkmark.seal.fill")
+                            Text(result)
+                        }
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Color.black.opacity(0.3))
+                        .foregroundColor(.fgNeon)
+                        .cornerRadius(20)
+                    } else {
+                        HStack(spacing: 5) {
+                            Text("Start Now")
+                            Image(systemName: "arrow.right")
+                        }
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    }
+                }
+                Spacer()
+                
+                // Small foreground icon
+                Image(systemName: icon)
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding(15)
+                    .background(Color.white.opacity(0.2))
+                    .clipShape(Circle())
+            }
+            .padding(.horizontal, 25)
+        }
+        .frame(height: 120)
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .stroke(Color.white.opacity(0.2), lineWidth: 1)
+        )
+        .shadow(color: .black.opacity(0.3), radius: 15, x: 0, y: 10)
+    }
+}
+
 // MARK: - Primary Button
 struct PrimaryButtonFG: View {
     let title: String

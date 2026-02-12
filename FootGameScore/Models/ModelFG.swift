@@ -43,4 +43,26 @@ struct UserStatsFG: Codable {
     var favoriteArticles: [UUID]
     var recentActivity: [Date]
     var currentStreak: Int
+    
+    // New fields
+    var rulesQuizScore: Int?
+    var strikerTypeResult: String?
+}
+
+struct RulesQuizQuestionFG: Identifiable {
+    let id = UUID()
+    let question: String
+    let options: [String]
+    let correctAnswerIndex: Int
+}
+
+struct StrikerQuestionFG: Identifiable {
+    let id = UUID()
+    let question: String
+    let options: [String]
+    let attribute: StrikerAttributeFG
+}
+
+enum StrikerAttributeFG {
+    case height, bodyType, foot, strength
 }
